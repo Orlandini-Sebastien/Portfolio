@@ -4,7 +4,7 @@ import useTypewriter from 'react-typewriter-hook'
 import React, { useState, useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import styles from './Cursor.module.css'
-import Qualite from './components/Qualite'
+import Qualite from '../components/Qualite'
 
 const MagicOcean: string[] = [' React', ' Frontend', ' Backend']
 let index: number = 0
@@ -98,12 +98,9 @@ export default function Home(): JSX.Element {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center">
-        <div className=" w-full text-center text-xl font-bold md:mt-20 ">
+      <div className="flex w-11/12 flex-col items-center justify-center">
+        <div className="my-4 w-full rounded border-b-2 bg-amber-50 p-2 text-3xl  shadow mb-20">
           Mes qualités
-        </div>
-        <div className="h-1 w-11/12 bg-orange-100 max-md:mb-10 md:mb-20 ">
-          {' '}
         </div>
         <div className="my-2 ">
           <Qualite />

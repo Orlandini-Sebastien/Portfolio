@@ -8,7 +8,7 @@ export default function myLogo() {
     >
       <div className="flex flex-row items-center">
         <FolderOpenIcon className="h-14 w-14 rotate-[10deg] " />
-        <p className="text-[30px]">Portfolio</p>
+        <p className="text-[30px]">Seb.Dev</p>
       </div>
     </div>
   )

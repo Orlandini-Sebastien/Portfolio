@@ -1,4 +1,6 @@
 'use client'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
   FireIcon,
   FaceSmileIcon,
@@ -10,13 +12,13 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
 const links = [
-  { name: 'About Me', href: '/', icon: FaceSmileIcon },
+  { name: 'A propos de moi', href: '/', icon: FaceSmileIcon },
   {
-    name: 'Projects',
+    name: 'Projets',
     href: '/projects',
     icon: DocumentDuplicateIcon,
   },
-  { name: 'My progress', href: '/progress', icon: FireIcon },
+  { name: 'Mes progrès', href: '/progress', icon: FireIcon },
   { name: 'Contact', href: '/contact', icon: EnvelopeIcon },
 ]
 
