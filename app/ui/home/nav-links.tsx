@@ -12,7 +12,7 @@ import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
 const links = [
-  { name: 'A propos de moi', href: '/', icon: FaceSmileIcon },
+  { name: 'Sur moi', href: '/', icon: FaceSmileIcon },
   {
     name: 'Projets',
     href: '/projects',
@@ -33,7 +33,7 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'flex items-center justify-center gap-2 rounded-md bg-gray-50 p-3  text-sm font-medium hover:bg-amber-50 hover:text-orange-400 max-md:grow md:h-[15%]  md:justify-start md:p-2 md:px-3',
+              'flex items-center justify-center gap-2 rounded-md bg-gray-50 p-3  text-sm  hover:bg-amber-50 hover:text-orange-400 max-md:grow md:h-[15%]  md:justify-start md:p-2 md:px-3 font-bold',
               {
                 'bg-amber-50 text-orange-400': pathname === link.href,
               },

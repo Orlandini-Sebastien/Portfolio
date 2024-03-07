@@ -1,0 +1,60 @@
+[
+  {
+    "projet": "Airbnb",
+    "image": "/airbnb.png",
+    "title": { 
+      "front": "ReactNative-Airbnb"},
+    "url":  {
+      "front" : "https://github.com/Orlandini-Sebastien/ReactNative-Airbnb"
+    }, 
+    "technos": [
+      {"name": "React", "icon": "/react.svg.png"},
+      {"name": "JavaScript", "icon": "/js.png"},
+      {"name": "JSX", "icon": "/jsx.png"},
+      {"name": "NativeWind", "icon": "/nativewind.png"},
+      {"name": "Expo", "icon": "/expo.png"}
+    ]
+  },
+  {
+    "projet": "Marvel",
+    "image": "/marvel.png",
+    "title": { 
+      "front": "Marvel-Frontend",
+      "back" : "Marvel-Backend"},
+    "url": {
+      "front" : "https://github.com/Orlandini-Sebastien/Marvel-Frontend",
+      "back" : "https://github.com/Orlandini-Sebastien/Marvel-Backend"
+    },
+    "technos": [
+      {"name": "React", "icon": "/react.svg.png"},
+      {"name": "JavaScript", "icon": "/js.png"},
+      {"name": "TypeScript", "icon": "/ts.svg.png"},
+      {"name": "Tailwind", "icon": "/tailwind.svg"},
+      {"name": "HTML", "icon": "/html.svg.png"},
+      {"name": "CSS", "icon": "/css.svg.png"},
+      {"name": "JSX", "icon": "/jsx.png"},
+      {"name": "Nodejs", "icon": "/nodejs.png"}
+    ]
+  },   {
+    "projet": "Vinted",
+    "image": "/vinted.png",
+    "title": { 
+      "front": "Vinted-Frontend-ts",
+      "back" : "Vinted-Backend-js"},
+    "url": {
+      "front" : "https://github.com/Orlandini-Sebastien/Vinted-Frontend-ts",
+      "back" : "https://github.com/Orlandini-Sebastien/Vinted-Backend-js"
+    },
+    "technos": [
+      {"name": "React", "icon": "/react.svg.png"},
+      {"name": "JavaScript", "icon": "/js.png"},
+      {"name": "TypeScript", "icon": "/ts.svg.png"},
+      {"name": "Tailwind", "icon": "/tailwind.svg"},
+      {"name": "HTML", "icon": "/html.svg.png"},
+      {"name": "CSS", "icon": "/css.svg.png"},
+      {"name": "JSX", "icon": "/jsx.png"},
+      {"name": "Nodejs", "icon": "/nodejs.png"},
+      {"name": "Mongodb", "icon": "/mdb.png"}
+    ]
+  }
+]

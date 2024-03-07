@@ -6,7 +6,7 @@ type IframProps = {
 
 const TitleProgress = ({ title }: IframProps): ReactElement => {
   return (
-    <div className="my-4 rounded border-b-2 bg-slate-50 p-2 text-3xl shadow font-bold ">
+    <div className="my-4 rounded border-b-2 bg-slate-50 p-2 text-3xl shadow text-center font-bold">
     {title}
   </div>
   )

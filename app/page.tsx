@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom'
 import styles from './Cursor.module.css'
 import Qualite from '../components/Qualite'
 
+
 const MagicOcean: string[] = [' React', ' Frontend', ' Backend']
 let index: number = 0
 export default function Home(): JSX.Element {
@@ -70,7 +71,7 @@ export default function Home(): JSX.Element {
             alt="photo de profil"
           ></Image>
           <div>
-            <p> Orlandini Sébastien</p>
+            <p > Orlandini Sébastien</p>
             <p>
               Développeur{' '}
               <span className={`${styles.cursor} text-red-300`}> {name}</span>
@@ -99,7 +100,7 @@ export default function Home(): JSX.Element {
       </div>
 
       <div className="flex w-11/12 flex-col items-center justify-center">
-        <div className="my-4 w-full rounded border-b-2 bg-amber-50 p-2 text-3xl  shadow mb-20">
+        <div className="font-bold my-4 w-full rounded border-b-2 bg-amber-50 p-2 text-2xl  shadow mb-20">
           Mes qualités
         </div>
         <div className="my-2 ">

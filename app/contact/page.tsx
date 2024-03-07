@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Home() {
   return (
     <main className="flex w-full flex-col items-center justify-center bg-white max-md:p-4 md:min-h-screen md:p-12 xl:p-24 shadow-xl rounded">
-      <div className="my-4 w-full rounded border-b-2 bg-slate-50 p-2 text-3xl  shadow">
+      <div className="my-4 w-full rounded border-b-2 bg-slate-50 p-2 text-3xl  shadow font-bold">
         Connectons-nous !{' '}
       </div>
       <div className="flex w-full gap-4 max-xl:flex-col xl:h-[450px] xl:flex-row ">
