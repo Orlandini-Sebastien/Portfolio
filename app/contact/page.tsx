@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import Contact from '../../components/contact'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,10 +8,15 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-col items-center justify-center bg-white max-md:p-4 md:min-h-screen md:p-12 xl:p-24 shadow-xl rounded">
-      <div className="my-4 w-full rounded border-b-2 bg-slate-50 p-2 text-3xl  shadow font-bold">
+    <main className="flex w-full flex-col items-center justify-center rounded bg-white shadow-xl max-md:p-4 md:min-h-screen md:p-12 xl:p-24">
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
+        className="my-4 w-full rounded border-b-2 bg-slate-50 p-2 text-3xl  font-bold shadow"
+      >
         Connectons-nous !{' '}
-      </div>
+      </motion.div>
       <div className="flex w-full gap-4 max-xl:flex-col xl:h-[450px] xl:flex-row ">
         <div className="my-4 flex w-full items-center rounded-lg border border-b-2 bg-amber-50 p-2 shadow max-xl:flex-row max-xl:gap-4 xl:flex-col  ">
           <Link

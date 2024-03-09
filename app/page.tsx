@@ -1,4 +1,5 @@
 'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import useTypewriter from 'react-typewriter-hook'
 import React, { useState, useEffect, useRef } from 'react'
@@ -99,9 +100,14 @@ export default function Home(): JSX.Element {
       </div>
 
       <div className="flex w-11/12 flex-col items-center justify-center">
-        <div className="my-4 mb-20 w-full rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow">
+        <motion.div
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
+          className="my-4 mb-20 w-full rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
+        >
           Mes qualités
-        </div>
+        </motion.div>
         <div className="my-2 ">
           <Qualite />
         </div>
