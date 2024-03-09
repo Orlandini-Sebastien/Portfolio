@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Nunito } from 'next/font/google'
 import './globals.css'
 import SideNav from '@/app/ui/home/sidenav'
+
 const inter = Inter({ subsets: ['latin'] })
 const nunito = Nunito({
   weight: ['400', '700', '800', '900', '1000'],
@@ -25,9 +26,9 @@ export default function RootLayout({
           <div className="w-full bg-orange-100 shadow-orange-300  max-md:shadow-lg md:w-48 md:shadow-2xl  ">
             <SideNav />
           </div>
-          <div className="flex-grow bg-amber-50 p-6 md:overflow-y-auto md:p-12">
+          <main className="flex-grow bg-amber-50 p-6 md:overflow-y-auto md:p-12">
             {children}
-          </div>
+          </main>
         </div>
       </body>
     </html>

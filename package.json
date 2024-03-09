@@ -23,6 +23,7 @@
     "@types/react-typist": "^2.0.6",
     "axios": "^1.6.7",
     "clsx": "^2.1.0",
+    "framer-motion": "^11.0.8",
     "leaflet": "^1.9.4",
     "next": "14.1.0",
     "nodemailer": "^6.9.11",
