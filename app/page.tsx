@@ -105,7 +105,7 @@ export default function Home(): JSX.Element {
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
-          className="my-4 mb-20 w-full rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
+          className="my-4 mb-20 flex w-full justify-center rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
         >
           Mes qualités
         </motion.div>
