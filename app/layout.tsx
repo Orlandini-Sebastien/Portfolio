@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Nunito } from 'next/font/google'
 import './globals.css'
 import SideNav from '@/app/ui/home/sidenav'
-
+import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 const nunito = Nunito({
   weight: ['400', '700', '800', '900', '1000'],
@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={`${nunito.className} antialiased`}>
         <div className="flex h-screen  flex-col md:flex-row md:overflow-hidden">
           <div className="w-full bg-orange-100 shadow-orange-300  max-md:shadow-lg md:w-48 md:shadow-2xl  ">

@@ -4,19 +4,16 @@ const TextCarousel: React.FC = () => {
   const [currentParagraph, setCurrentParagraph] = useState<number>(0)
 
   const fparagraphs = () => {
-    const array = []
-    for (let i = 0; i < paragraphs.length; i++) {
-      array.push(
-        <p
-          className={`lg:text-md absolute flex  items-center justify-center rounded-full border-2 bg-amber-50 p-14 text-center text-orange-400 shadow-xl transition-opacity duration-500 max-lg:h-72 max-lg:w-72 max-lg:text-xs lg:h-96 lg:w-96 ${
-            currentParagraph === i ? 'opacity-100' : 'opacity-0 '
-          }`}
-        >
-          {paragraphs[i]}
-        </p>,
-      )
-    }
-    return array
+    return paragraphs.map((paragraph, index) => (
+      <p
+        key={index}
+        className={`lg:text-md absolute flex items-center justify-center rounded-full border-2 bg-amber-50 p-14 text-center text-orange-400 shadow-xl transition-opacity duration-500 max-lg:h-72 max-lg:w-72 max-lg:text-xs lg:h-96 lg:w-96 ${
+          currentParagraph === index ? 'opacity-100' : 'opacity-0 '
+        }`}
+      >
+        {paragraph}
+      </p>
+    ))
   }
 
   const paragraphs: string[] = [

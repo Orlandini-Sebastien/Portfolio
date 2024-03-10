@@ -35,6 +35,7 @@ export default function Home(): JSX.Element {
           height={200}
           src={'/photoProfil.jpg'}
           alt="photo de profil"
+          priority={true}
         ></Image>
         <div className="h-2/3 w-1/2 px-4  font-bold text-gray-900 md:text-lg lg:text-xl xl:text-2xl  ">
           <div>

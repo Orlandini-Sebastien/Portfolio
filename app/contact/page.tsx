@@ -32,7 +32,7 @@ export default function Home() {
           <Link
             className=" my-4 flex w-full items-center rounded-lg border border-b-2 bg-slate-50 p-2 shadow max-xl:justify-center "
             target="_blank"
-            href={'www.linkedin.com/in/sebastien-orlandini-462840292'}
+            href={'https://www.linkedin.com/in/sebastien-orlandini-462840292/'}
           >
             <span className="px-2">
               <FontAwesomeIcon
