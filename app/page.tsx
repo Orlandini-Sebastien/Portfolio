@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
               <span className={`${styles.cursor} text-red-300`}> {name}</span>
             </p>
             <div className="md:text-md text-gray-600 lg:text-lg xl:text-xl  ">
-              En recherche d&apos;opportunité
+              En quête de nouveaux défis professionnels.
             </div>
           </div>
           <div className="md-text-md text-right italic text-gray-400 lg:text-lg xl:text-xl">
