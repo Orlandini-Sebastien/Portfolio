@@ -99,8 +99,8 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="flex w-11/12 flex-col xl:flex-row items-center justify-center gap-20">
-        <div className='w-full xl:w-1/2 flex flex-col justify-center items-center'>
+      <div className="mb-8 flex w-11/12 flex-col items-center justify-center gap-20 xl:flex-row">
+        <div className="flex w-full flex-col items-center justify-center xl:w-1/2">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -113,7 +113,7 @@ export default function Home(): JSX.Element {
             <Qualite />
           </div>
         </div>
-        <div className='w-full xl:w-1/2 flex flex-col justify-center items-center'>
+        <div className="flex w-full flex-col items-center justify-center xl:w-1/2">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
