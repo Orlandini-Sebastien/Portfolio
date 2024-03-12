@@ -26,7 +26,7 @@ const TextCarousel: React.FC = () => {
   ]
 
   return (
-    <div className="relative mb-20  max-lg:h-72 max-lg:w-72 lg:h-96 lg:w-96">
+    <div className="relative mb-5  max-lg:h-72 max-lg:w-72 lg:h-96 lg:w-96">
       {fparagraphs()}
 
       <button

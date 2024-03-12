@@ -2,29 +2,30 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import useTypewriter from 'react-typewriter-hook'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, DragEventHandler } from 'react'
 import ReactDOM from 'react-dom'
 import styles from './Cursor.module.css'
 import Qualite from '../components/Qualite'
+import Carousel from '@/components/carousel'
 
-const MagicOcean: string[] = [' React', ' Frontend', ' Backend']
+const dev: string[] = [' React', ' Frontend', ' Backend']
 let index: number = 0
 export default function Home(): JSX.Element {
-  const [magicName, setMagicName] = useState<string>(' Full-Stack')
+  const [devName, setDevName] = useState<string>(' Full-Stack')
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
-  const name = useTypewriter(magicName)
+  const name = useTypewriter(devName)
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       index = index > 2 ? 0 : ++index
-      setMagicName(MagicOcean[index])
+      setDevName(dev[index])
     }, 5000)
     return () => {
       if (intervalRef.current !== null) {
         clearInterval(intervalRef.current)
       }
     }
-  }, [magicName])
+  }, [devName])
 
   return (
     <main className=" flex min-h-screen flex-col items-center bg-slate-50 shadow-xl">
@@ -61,7 +62,6 @@ export default function Home(): JSX.Element {
           loading="lazy"
         ></iframe>
       </div>
-
       <div className="my-4 flex w-11/12 max-xl:flex-col xl:hidden">
         <div className="flex h-2/3 w-full  items-center px-4 font-bold text-gray-900 max-md:justify-center md:justify-start md:text-lg lg:text-xl xl:text-2xl   ">
           <Image
@@ -99,18 +99,32 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-
-      <div className="flex w-11/12 flex-col items-center justify-center">
-        <motion.div
-          initial={{ x: -20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
-          className="my-4 mb-20 flex w-full justify-center rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
-        >
-          Mes qualités
-        </motion.div>
-        <div className="my-2 ">
-          <Qualite />
+      <div className="flex w-11/12 flex-col xl:flex-row items-center justify-center gap-20">
+        <div className='w-full xl:w-1/2 flex flex-col justify-center items-center'>
+          <motion.div
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
+            className="my-4 mb-20 flex w-full justify-center rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
+          >
+            Savoir-être
+          </motion.div>
+          <div className="my-2  ">
+            <Qualite />
+          </div>
+        </div>
+        <div className='w-full xl:w-1/2 flex flex-col justify-center items-center'>
+          <motion.div
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: 'easeInOut', duration: 0.75, delay: 0.75 }}
+            className="my-4 mb-20 flex w-full justify-center rounded border-b-2 bg-amber-50 p-2 text-2xl  font-bold shadow"
+          >
+            Savoir-faire
+          </motion.div>
+          <div className="my-2 ">
+            <Carousel />
+          </div>
         </div>
       </div>
     </main>
