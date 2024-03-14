@@ -7,11 +7,13 @@ import ReactDOM from 'react-dom'
 import styles from './Cursor.module.css'
 import Qualite from '../components/Qualite'
 import Carousel from '@/components/carousel'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
 
 const dev: string[] = [' React', ' Frontend', ' Backend']
 let index: number = 0
 export default function Home(): JSX.Element {
-  const [devName, setDevName] = useState<string>(' Full-Stack')
+  const [devName, setDevName] = useState<string>(' MERN Stack')
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const name = useTypewriter(devName)
 
@@ -31,16 +33,24 @@ export default function Home(): JSX.Element {
     <main className=" flex min-h-screen flex-col items-center bg-slate-50 shadow-xl">
       <div className="my-4 flex w-11/12 items-center  justify-around max-xl:hidden  xl:flex-row">
         <Image
-          className="rounded-full border-2 border-orange-500 shadow-xl"
           width={200}
           height={200}
           src={'/photoProfil.jpg'}
           alt="photo de profil"
-          priority={true}
         ></Image>
         <div className="h-2/3 w-1/2 px-4  font-bold text-gray-900 md:text-lg lg:text-xl xl:text-2xl  ">
           <div>
-            <p> Orlandini Sébastien</p>
+            <p>
+              {' '}
+              Orlandini Sébastien
+              <a href="/cv.pdf" download="Orlandini-Sebastien.CV.pdf">
+                {' '}
+                <FontAwesomeIcon
+                  className="h-6 text-orange-200 "
+                  icon={faFile}
+                />
+              </a>
+            </p>
             <p>
               Développeur{' '}
               <span className={`${styles.cursor} text-red-300`}> {name}</span>
@@ -62,17 +72,26 @@ export default function Home(): JSX.Element {
           loading="lazy"
         ></iframe>
       </div>
+
       <div className="my-4 flex w-11/12 max-xl:flex-col xl:hidden">
         <div className="flex h-2/3 w-full  items-center px-4 font-bold text-gray-900 max-md:justify-center md:justify-start md:text-lg lg:text-xl xl:text-2xl   ">
           <Image
-            className="mr-4 rounded-full border-2 border-orange-500 shadow-xl"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             src={'/photoProfil.jpg'}
             alt="photo de profil"
           ></Image>
           <div>
-            <p> Orlandini Sébastien</p>
+            <p>
+              Orlandini Sébastien{' '}
+              <a href="/cv.pdf" download="Orlandini-Sebastien.CV.pdf">
+                {' '}
+                <FontAwesomeIcon
+                  className="h-4 text-orange-200 "
+                  icon={faFile}
+                />
+              </a>
+            </p>
             <p>
               Développeur{' '}
               <span className={`${styles.cursor} text-red-300`}> {name}</span>
@@ -99,8 +118,9 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="mb-8 flex w-11/12 flex-col items-center justify-center gap-20 xl:flex-row">
-        <div className="flex w-full flex-col items-center justify-center xl:w-1/2">
+
+      <div className=" flex mb-4 w-11/12 flex-1 flex-col  items-center justify-center gap-20 xl:flex-row">
+        <div className="flex w-full  flex-col items-center justify-center xl:w-1/2">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

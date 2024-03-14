@@ -8372,6 +8372,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+url-encode-decode@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/url-encode-decode/-/url-encode-decode-1.0.0.tgz"
+  integrity sha512-0KsUsGXMJyUhRqPvKWnv1Q3UtWhmv09+J9WpTGMBnShD1E5/YESyBeLVQja3AP7kua/mNzJ8h5P8t4YIzD0Fbg==
+
 use-callback-ref@^1.3.0:
   version "1.3.1"
   resolved "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.1.tgz"

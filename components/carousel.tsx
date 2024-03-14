@@ -17,7 +17,7 @@ export default function SimpleSlider() {
     autoplaySpeed: 6000,
   }
   return (
-    <section className="relative mb-5  max-lg:h-72 max-lg:w-72 lg:h-96 lg:w-96 ">
+    <section className="relative max-xl:mb-5  max-lg:h-72 max-lg:w-72 lg:h-96 lg:w-96 xl:h-[300px] mb-[100px] ">
       <Slider {...settings}>
         <CarouselSlide
           title="Développement Full-Stack"
