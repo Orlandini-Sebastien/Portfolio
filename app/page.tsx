@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
         <Image
           width={200}
           height={200}
-          src={'/photoProfil.jpg'}
+          src={'/photoProfil.png'}
           alt="photo de profil"
         ></Image>
         <div className="h-2/3 w-1/2 px-4  font-bold text-gray-900 md:text-lg lg:text-xl xl:text-2xl  ">
@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
           <Image
             width={200}
             height={200}
-            src={'/photoProfil.jpg'}
+            src={'/photoProfil.png'}
             alt="photo de profil"
           ></Image>
           <div>
@@ -119,7 +119,7 @@ export default function Home(): JSX.Element {
         </div>
       </div>
 
-      <div className=" flex mb-4 w-11/12 flex-1 flex-col  items-center justify-center gap-20 xl:flex-row">
+      <div className=" mb-4 flex w-11/12 flex-1 flex-col  items-center justify-center gap-20 xl:flex-row">
         <div className="flex w-full  flex-col items-center justify-center xl:w-1/2">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
